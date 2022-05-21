@@ -7,6 +7,8 @@
     <title>Home - Game Mania</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,30 +21,30 @@
               <a href="#" target="_blank">Consoles</a>
               <a href="#" target="_blank">Promoções</a>
             </nav>
-            <a href=""id="bars" onclick="mostraMenu()"><img class="icone-menu" src="img/bars.svg" alt=""></a>  
+            <a href="#" id="barras" onclick="mostrarMenu()"><img class="icone-menu" src="img/bars.svg" alt="icone da barras"></a>  
         </div>
     </header>
         <main>
-            <section class="banner">
+            <section id="carrossel" class="banner banner-cs">
                 <div class="container posicionamento-conteudo">
                     <div class="conteudo-banner">
-                        <h1>Fifa 2022</h1>
-                        <p>FIFA22 ainda mais realista e dinamico.</p>
+                        <h1>Jogos 2022</h1>
+                        <p>Diversos jogos com promoçôes imperdiveis!</p>
                         <a href="#">Comprar</a>
                     </div>
                 </div>
             </section>   
-            <section class="jogos">
-                <div class="container posicionamento-jogos">
+            <section class="destaquesdois">
+                <div class="container posicionamento-destaquesdois">
                     <img src="img/logo_flfa.png" alt="Logo Fifa">
                     <img src="img/logo_csgo.png" alt="Logo CSGO">
                     <img src="img/logo_ll.png" alt="Logo Leagues of Legends">
                     <img src="img/logo_go.png" alt="Logo God of War">
                 </div>
             </section>
-            <section class="banner-promocao">
+            <section class="novidades">
                 <div class="container posicionamento-texto">
-                 <div class="texto-banner">
+                 <div class="texto-novidades">
                      <h1>Guardiões da Galáxia</h1>
                      <p>Guardians of the Galaxy é um jogo eletrônico de ação-aventura desenvolvido pela  Eidos Montréal e publicado pela Square Enix. É baseado nos personagens, mitologia e adaptações em outras mídias do grupo de super-heróis de histórias em quadrinhos 
                         Guardiões da Galáxia da Marvel Comics.</p>
@@ -50,36 +52,148 @@
                  </div>
                 </div>
             </section>
-            <section class="consoles">
-                <div class="container posicionamento-consoles">
+            <section class="destaquesdois">
+                <div class="container posicionamento-destaquesdois">
                     <img src="img/logo_ps.png" alt="">
                     <img src="img/logo_xbox.png" alt="">
                     <img src="img/logo_nitendo.png" alt="">             
                 </div>
             </section>
-            <section class="vitrine">
-                <div class="container posicionamento-produtos">
-                    <a href="#"><img src="img/produto_1.png" alt=""></a>
-                    <a href="#"><img src="img/produto_2.png" alt=""></a>
-                    <a href="#"><img src="img/produto_3.png" alt=""></a>
-                    <a href="#"><img src="img/produto_4.png" alt=""></a>
-                    <a href="#"><img src="img/produto_5.png" alt=""></a>
-                    <a href="#"><img src="img/produto_6.png" alt=""></a>
+            <section class="galeria">
+                <div class="container produtos">
+                    <div class="posicionamento-produtos">
+                        <img src="img/image_produto.png" alt="Imagem do produto">
+                        <h1>Jogo</h1>
+                        <p>R$</p>
+                        <p>Game Mania</p>
+                        <p>Frete Gratis</p>
+                        <a href="#">Comprar</a>
+                    </div>
+
+                    <div class="posicionamento-produtos">
+                        <img src="img/image_produto.png" alt="Imagem do produto">
+                        <h1>Jogo</h1>
+                        <p>R$</p>
+                        <p>Game Mania</p>
+                        <p>Frete Gratis</p>
+                        <a href="#">Comprar</a>
+                    </div>
+
+                    <div class="posicionamento-produtos">
+                        <img src="img/image_produto.png" alt="Imagem do produto">
+                        <h1>Jogo</h1>
+                        <p>R$</p>
+                        <p>Game Mania</p>
+                        <p>Frete Gratis</p>
+                        <a href="#">Comprar</a>
+                    </div>
+
+                    <div class="posicionamento-produtos">
+                        <img src="img/image_produto.png" alt="Imagem do produto">
+                        <h1>Jogo</h1>
+                        <p>R$</p>
+                        <p>Game Mania</p>
+                        <p>Frete Gratis</p>
+                        <a href="#">Comprar</a>
+                    </div>                                                                     
+               
+                </div>
+
+                <div class="container produtos">
+                    <div class="posicionamento-produtos">
+                        <img src="img/image_produto.png" alt="Imagem do produto">
+                        <h1>Jogo</h1>
+                        <p>R$</p>
+                        <p>Game Mania</p>
+                        <p>Frete Gratis</p>
+                        <a href="#">Comprar</a>
+                    </div>
+
+                    <div class="posicionamento-produtos">
+                        <img src="img/image_produto.png" alt="Imagem do produto">
+                        <h1>Jogo</h1>
+                        <p>R$</p>
+                        <p>Game Mania</p>
+                        <p>Frete Gratis</p>
+                        <a href="#">Comprar</a>
+                    </div>
+
+                    <div class="posicionamento-produtos">
+                        <img src="img/image_produto.png" alt="Imagem do produto">
+                        <h1>Jogo</h1>
+                        <p>R$</p>
+                        <p>Game Mania</p>
+                        <p>Frete Gratis</p>
+                        <a href="#">Comprar</a>
+                    </div>
+                    
+                    <div class="posicionamento-produtos">
+                        <img src="img/image_produto.png" alt="Imagem do produto">
+                        <h1>Jogo</h1>
+                        <p>R$</p>
+                        <p>Game Mania</p>
+                        <p>Frete Gratis</p>
+                        <a href="#">Comprar</a>
+                    </div>
+                                                                     
                 </div>
             </section>
                                 
     </main>
     
     <footer>
-        <section class="rodape">
-            <div class="container">
+       
+        <section class="footer">
+            <div class="container footer">
+               <div class="container posicionamento-links">
+                  <h1>Links Uteis</h1>
+                  <Li><a href="principal">Fale Conosco</a></Li>
+                  <Li><a href="principal">Minha Conta</a></Li>
+                  <Li><a href="principal">Regras de Compras</a></Li>
+                  <Li><a href="principal">Sac</a></Li>
+                  <Li><a href="principal">Contatos</a></Li>
+               </div>
+               <div class="container posicionamento-links">
+                  <h1>Links Paginas</h1>
+                  <Li><a href="principal">Inicio</a></Li>
+                  <Li><a href="principal">Jogos</a></Li>
+                  <Li><a href="principal">Consoles</a></Li>
+                  <Li><a href="principal">Promação</a></Li>
+                  <Li><a href="principal">Login</a></Li>
+                </div>
+            
+                <div class="container posicionamento-logo">
+                   <a href="#"><img src="img/logo.svg" alt="Logo do Site"></a>
+                </div>
                 
+                <div class="container opcoes-contatos">
+                    <div class="newsletter">
+                      
+                      <form action="">
+                          <input id="campo-email" type="email" placeholder="E-mail" required>
+                          <button onclick="cadastrarNewsletter()">Cadastrar</button>
+                      </form>  
+                        
 
-            </div>
-
+                    </div>
+                    
+                    <div class="container posicionamento-siga-nos">
+                       <h1>Siga-nos:
+                        <a href="#"><img href="#" src="img/facebook.png" alt="Logo Facebook"></a>
+                        <a href="#"><img href="#" src="img/instagram.png" alt="Logo Instagram"></a>
+                        <a href="#"><img href="#" src="img/youtube.png" alt="logo Youtube"></a>
+ 
+                       </h1>
+                       
+                    </div>
+                    
+                </div>
+           </div>
         </section>
 
     </footer>
+
+    <script src="/js/jquery.js"></script>
 
     <script src="js/script.js"></script>
 

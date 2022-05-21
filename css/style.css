@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: #0C0B0B;
+    background-color:#0C0B0B;
     height: 90px;
 }
 
@@ -19,32 +19,45 @@ header {
 }
 
 .menu {
-    width: 650px;
+    width: 500px;
     display: flex;
     justify-content: space-between;
 }
 .menu a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
 }
 .icone-menu{
     height: 40px;
 }
-#bars {
+#barras {
     display: none;
 }
 
 .banner{
    
     height: 609px;
-    background-image: url(../img/img_banner.png);
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: cover;
 }
+.banner-cs{
+    background-image: url(../img/img_banner_cs.png);
+
+}
+.banner-lol{
+    background-image: url(../img/img_banner_lol.png);
+
+}
+.banner-fifa{
+    background-image: url(../img/img_banner_fifa.png);
+
+}
+
+
 
 .posicionamento-conteudo {
     height: 100%;
@@ -61,7 +74,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
     color: white;
 }
 .conteudo-banner a {
@@ -79,14 +91,14 @@ header {
 .conteudo-banner h1 {
     font-family: "roboto";
     font-weight: bold;
-    font-size: 100px;
+    font-size: 90px;
     text-transform: uppercase;   
 }
 .conteudo-banner p {
     font-family: "roboto";
     font-size: 22px;
 }
-.jogos {
+.destaques {
     background-color: #0C0B0B;
     height: 149px;
 }
@@ -99,7 +111,7 @@ header {
     flex-wrap: wrap;
 }
 
-.banner-promocao{
+.novidades{
     height: 753px;
     background-image: url(../img/img_banner-promocao.png);
     background-repeat: no-repeat;
@@ -113,7 +125,7 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
-.texto-banner{
+.texto-novidades{
     width: 865px;
     height: 346px;
    
@@ -123,16 +135,16 @@ header {
     color: white;
 }
 
-.texto-banner h1{
+.texto-novidades h1{
     font-family: "roboto";
     font-weight: bold;
     font-size: 35px;  
 }
-.texto-banner p{
+.texto-novidades p{
     font-family: "roboto";
     font-size: 30px;
 }
-.texto-banner a{
+.texto-novidades a{
     width: 264px;
     color: white;
     background-color: #AE1515;
@@ -144,37 +156,125 @@ header {
     border-radius: 10px;
     text-align: center;
 }
-.consoles{
+.destaquesdois{
     background-color: #0C0B0B;
-    height: 151px;
+    
 }
-.posicionamento-consoles{
-    height: 100%;
+.posicionamento-destaquesdois{
+    
     display:flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
-.vitrine{
+.galeria{
     background-image: url(../img/background_vitrine.png);
     height: 1001px;
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: cover;
+    padding: 10px;
+}
+.produtos{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
 }
 .posicionamento-produtos{
-    width: 1200px;
-    height: 1200px;
-    
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+   
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;   
 }
 
+.posicionamento-produtos h1{
+    font-size: 20px;
+
+}
+.posicionamento-produtos a{
+    background-color: #AE1515;
+    color: white;
+    font-family:"roboto";
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    height: 300px;
+    background-color: #0C0B0B;
+    
+}
+
+.posicionamento-links h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.posicionamento-links a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.posicionamento-links li{
+    color: white;
+}
+
+
+.newsletter{
+    height: 38px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.newsletter button{
+    background-color: blue;
+    color: white;
+    height: 29px;
+    border-color: blue;
+}
+
+
+.posicionamento-siga-nos h1{
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+
+
+
+
 @media screen and (max-width: 1100px) {
+    
+    .cabecalho{
+        position: relative;
+    }
+    
     .menu {
         display: none;
+        
+        position: absolute;
+        top: 80px;
+        right: 0px;
+       
+        height: 300px;
+        
+        flex-direction: column;
+        background-color: #0C0B0B;
+        justify-content: space-around;
+        align-items: center;
     }
-    #bars {
+    #barras {
         display: inline-block;
     }
 }
